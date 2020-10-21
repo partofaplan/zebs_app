@@ -15,8 +15,12 @@ http.createServer(function (req, res) {
   if (req.url == '/fileupload') {
     var form = new formidable.IncomingForm();
 	form.parse(req, function (err, fields, files) {
-	  var oldpath = files.filetoupload.path;
-	  var newpath = './' + files.filetoupload.name;
+      var oldpath = files.filetoupload.path;
+      var dir = './uploads';
+      if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir);
+      }
+      var newpath = dir + files.filetoupload.name;
 	  fs.rename(oldpath, newpath, function (err) {
 	    if (err) throw err;
 	    res.write('File uploaded');
