@@ -1,8 +1,12 @@
 {
-  "name": "zachapp",
-  "version": "0.0.3",
+  "name": "zebs",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": { "formidable": "latest", "nodemailer": "latest", "fs": "latest"},
+  "dependencies": {
+    "formidable": "latest",
+    "nodemailer": "latest",
+    "fs": "latest"
+  },
   "scripts": {
     "start": "node uploadandemail.js"
   }
