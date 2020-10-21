@@ -4,10 +4,10 @@ var fs = require('fs');
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-    service: 'iCloud',
+    service: 'gmail',
     auth: {
-        user: 'partofaplan',
-        pass: 'Frodo0316!'
+        user: 'zkptest1985@gmail.com',
+        pass: 'god-is-our-protector'
     }
 });
 
@@ -23,7 +23,7 @@ http.createServer(function (req, res) {
 	    res.end();
 	  });
 	  var mailOptions = {
-        from: 'partofaplan@icloud.com',
+        from: 'zkptest1985@gmail.com',
         to: 'zperki5@wgu.edu',
         subject: 'File was uploaded',
         text: files.filetoupload.name + ' was uploaded!'
