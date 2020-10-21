@@ -4,15 +4,12 @@ var fs = require('fs');
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-  host: "mail.google.com",
-  port: 587,
-  secure: false, // upgrade later with STARTTLS
-  auth: {
-    user: "partofaplan@gmail.com",
-    pass: "god-is-our-protector"
-  }
+    service: 'iCloud',
+    auth: {
+        user: 'partofaplan@gmail.com',
+        pass: 'Frodo0316!'
+    }
 });
-
 
 http.createServer(function (req, res) {
   if (req.url == '/fileupload') {
@@ -26,7 +23,7 @@ http.createServer(function (req, res) {
 	    res.end();
 	  });
 	  var mailOptions = {
-        from: 'partofaplan@gmail.com',
+        from: 'partofaplan@icloud.com',
         to: 'zperki5@wgu.edu',
         subject: 'File was uploaded',
         text: files.filetoupload.name + ' was uploaded!'
