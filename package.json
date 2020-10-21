@@ -1,0 +1,9 @@
+{
+  "name": "zachapp",
+  "version": "0.0.3",
+  "private": true,
+  "dependencies": { "formidable": "latest", "nodemailer": "latest", "fs": "latest"},
+  "scripts": {
+    "start": "node uploadandemail.js"
+  }
+}
