@@ -6,7 +6,7 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
     service: 'iCloud',
     auth: {
-        user: 'partofaplan@gmail.com',
+        user: 'partofaplan',
         pass: 'Frodo0316!'
     }
 });
