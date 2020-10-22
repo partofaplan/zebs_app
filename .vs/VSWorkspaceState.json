@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.ebextensions"
   ],
-  "SelectedNode": "\\uploadandemail.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
