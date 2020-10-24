@@ -11,7 +11,7 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-http.createServer(function (req, res) {
+var srvr = http.createServer(function (req, res) {
   if (req.url == '/fileupload') {
     var form = new formidable.IncomingForm();
 	form.parse(req, function (err, fields, files) {
@@ -48,4 +48,7 @@ http.createServer(function (req, res) {
       res.write('</form>');
       return res.end;
     }
+    srvr.timeout = 2000;
+    console.log(srvr.timeout);
 }).listen(9000);
+

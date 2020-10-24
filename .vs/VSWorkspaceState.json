@@ -3,6 +3,6 @@
     "",
     "\\.ebextensions"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\.ebextensions\\extend_proxy_timeout.config",
   "PreviewInSolutionExplorer": false
 }
