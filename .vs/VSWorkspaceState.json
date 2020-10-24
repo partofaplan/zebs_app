@@ -3,6 +3,5 @@
     "",
     "\\.ebextensions"
   ],
-  "SelectedNode": "\\.ebextensions\\extend_proxy_timeout.config",
   "PreviewInSolutionExplorer": false
 }
