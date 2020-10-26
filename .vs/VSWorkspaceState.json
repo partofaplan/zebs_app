@@ -3,5 +3,6 @@
     "",
     "\\.ebextensions"
   ],
+  "SelectedNode": "\\.ebextensions\\proxy.config",
   "PreviewInSolutionExplorer": false
 }
